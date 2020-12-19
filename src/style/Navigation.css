@@ -1,0 +1,46 @@
+li {
+    flex-grow:1;
+}
+
+nav.main {
+
+        text-decoration: none;
+        background-color: rgb(219, 234, 243);
+    
+}
+
+.main ul {
+    display:flex;
+    list-style-type: none;
+}
+ 
+nav.main a {
+    display:block;
+    color:black;
+    text-decoration: none;
+    font-weight:bold;
+    padding: 0 15px 0 15px;
+    text-align:center;
+    justify-content: center;
+    padding:15px;
+}
+
+
+
+
+nav.main a:hover {
+    color:rgb(12, 36, 158);
+    text-decoration: none;
+    transition:.2s
+}
+
+
+nav.main a.active {
+    color:rgb(16, 16, 83);
+    border-bottom: rgb(6, 26, 87) 3px solid ;
+}
+
+
+
+
+

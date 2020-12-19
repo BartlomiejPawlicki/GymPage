@@ -10,21 +10,21 @@ class App extends Component {
   render() {
     return (
       <Router>
-      <div className="App">
+      <div className="app">
+      <aside>
+          {<Navigation/>}
+        </aside>
       <header>
         {<Header/>}
         </header>
       <main>
-        <aside>
-          {<Navigation/>}
-        </aside>
         <section>
         {<Page/>}
         </section>
-        <footer>
+      </main>
+      <footer>
          {<Footer/>}
         </footer>
-      </main>
       </div>
       </Router>
     )

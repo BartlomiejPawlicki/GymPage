@@ -1,4 +1,31 @@
-* {
-  padding:10px;
-  
+div.app {
+  box-sizing:border-box;
+  margin:0 auto;
+  background-color: rgb(193, 203, 212);
+  width:90%;
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
 }
+
+aside {
+flex-basis:5vh;
+}
+
+header {
+
+  flex-basis:45vh;
+}
+
+main{
+flex-grow:1;
+flex-basis:90vh;
+}
+footer {
+  flex-basis:8vh;
+}
+
+
+
+
+
