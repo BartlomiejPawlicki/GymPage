@@ -1,7 +1,11 @@
+
+
+
+
 div.app {
   box-sizing:border-box;
   margin:0 auto;
-  background-color: rgb(193, 203, 212);
+  background-color: rgb(237, 240, 245);
   width:90%;
   min-height:100vh;
   display:flex;
@@ -9,12 +13,13 @@ div.app {
 }
 
 aside {
-flex-basis:5vh;
+flex-basis:7.4vh;
+background-color:rgb(199, 226, 47)
 }
 
 header {
 
-  flex-basis:45vh;
+  flex-basis:61vh;
 }
 
 main{
