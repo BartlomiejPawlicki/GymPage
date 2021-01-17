@@ -13,7 +13,7 @@ display:grid;
 
 }
 
-input {
+form input{
     width: 70%;
     padding: 12px;
     border: 2px solid #ccc;
@@ -24,7 +24,7 @@ input {
     
   }
 
-  label {
+  form label {
     margin-top:5px;
     padding: 12px 12px 12px 0;
     margin-right:200px;

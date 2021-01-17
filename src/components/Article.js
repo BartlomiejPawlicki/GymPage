@@ -12,11 +12,11 @@ const styles = {
 
 
     return (
+      
 <article style={styles}>
   <h3 style={{
     marginBottom:4,
   textTransform:'uppercase',
-
   }}>{title}</h3>
   <span style={{
 display:'block',
@@ -28,6 +28,7 @@ color:'black'
 
   }}>{author}</span>
   <p>{text}</p>
+  
 </article>
       );
 }
