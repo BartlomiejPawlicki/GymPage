@@ -19,9 +19,15 @@ const Navigation = () => {
     </li>
   ));
   return (
-    <nav className="main">
+
+<div className="main">
+  <div className="logo">
+  Gold's Gym
+  </div>
+    <nav>
       <ul>{menu}</ul>
     </nav>
+    </div>
   );
 };
 

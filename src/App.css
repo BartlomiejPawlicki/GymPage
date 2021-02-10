@@ -1,36 +1,26 @@
-
-
-
-
 div.app {
-  box-sizing:border-box;
-  margin:0 auto;
+  box-sizing: border-box;
+  margin: 0 auto;
   background-color: rgb(237, 240, 245);
-  width:90%;
-  min-height:100vh;
-  display:flex;
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
 }
 
-aside {
-flex-basis:7.4vh;
-background-color:rgb(199, 226, 47)
+.section_navigation {
+  flex-basis: 7.4vh;
 }
 
 header {
-
-  flex-basis:61vh;
+  flex-basis: 61vh;
 }
 
-main{
-flex-grow:1;
-flex-basis:90vh;
+main {
+  flex-grow: 1;
+  flex-basis: 90vh;
+  background:#fefffb;
 }
 footer {
-  flex-basis:8vh;
+  flex-basis: 8vh;
 }
-
-
-
-
-

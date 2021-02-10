@@ -11,9 +11,9 @@ class App extends Component {
     return (
       <Router>
       <div className="app">
-      <aside>
+      <section className="section_navigation">
           {<Navigation/>}
-        </aside>
+        </section>
       <header>
         {<Header/>}
         </header>
