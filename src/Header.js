@@ -5,7 +5,7 @@ import {Route,Switch} from 'react-router-dom'
 
 import picture1 from './pictures/gym1.jpg'
 import picture2 from './pictures/gym2.jpg'
-
+import picture3 from './pictures/gym4.jpg'
 
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
          <img src={picture2} alt="gym" />
      )} />
      <Route path="/products" render = {() => (
-         <img src={picture2} alt="gym" />
+         <img src={picture3} alt="gym" />
      )} />
       
       <Route path="/contact" render = {() => (

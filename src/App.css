@@ -2,14 +2,15 @@ div.app {
   box-sizing: border-box;
   margin: 0 auto;
   background-color: rgb(237, 240, 245);
-  width: 90%;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
 }
 
 .section_navigation {
-  flex-basis: 7.4vh;
+  flex-basis: 15vh;
 }
 
 header {
