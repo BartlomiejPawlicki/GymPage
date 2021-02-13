@@ -1,7 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import "./style/Navigation.css";
-import icon from './pictures/logo-gym.png'
+import icon from "./pictures/logo-gym.png";
 
 const list = [
   { name: "Start", path: "/", exact: true },
@@ -12,25 +13,34 @@ const list = [
 ];
 
 const Navigation = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+
+
+
+
   const menu = list.map((link) => (
-    <li key={link.name}>
-      <NavLink to={link.path} exact={link.exact ? link.exact : false}>
+    <li className="nav-item" key={link.name}>
+      <NavLink className="nav-links" onClick={closeMobileMenu} to={link.path} exact={link.exact ? link.exact : false}>
         {link.name}
       </NavLink>
     </li>
   ));
   return (
-
-<div className="main">
-  <div className="logo__container">
-    <NavLink to='/' className="logo__link">
-  <img className="logo" src={icon} alt="logo"/>
-  </NavLink>
-  </div>
-    <nav>
-      <ul>{menu}</ul>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img className="logo" src={icon} alt="logo" />
+        </Link>
+        <div className="menu-icon" onClick ={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+        </div>
+        <ul className={click ? 'nav-menu active': 'nav-menu'}>{menu}</ul>
+        </div>
     </nav>
-    </div>
   );
 };
 
