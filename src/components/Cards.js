@@ -10,7 +10,7 @@ import adminSecondPhoto from '../pictures/adminpanel2.jpg'
 const Cards = () => {
   return (
     <div className="cards">
-      <h1>Zobacz na naszą ofertę</h1>
+      <h1>Spójrz na naszą ofertę</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__item">

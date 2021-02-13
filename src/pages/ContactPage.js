@@ -19,7 +19,8 @@ class ContactPage extends React.Component {
   };
 
   checkValue = {
-    userName__incorrect: "Nazwa musi byc dłuższa niż 8 znakow i nie moze zawierać spacji",
+    userName__incorrect:
+      "Nazwa musi byc dłuższa niż 8 znakow i nie moze zawierać spacji",
     userSurName__incorrect: "Wpisz conajmniej 5 liter",
     email__incorrect: "email nie zawiera @",
     password__incorrect: "Hasło musi zawierać 7 znaków",
@@ -134,10 +135,11 @@ class ContactPage extends React.Component {
   render() {
     return (
       <>
-        <form onSubmit={this.handleSubmit} noValidate className="form">
+        <form onSubmit={this.handleSubmit} noValidate className="formApplication">
           <label htmlFor="userName">
             Wpisz swoję imię:
             <input
+            className="formApplication--input"
               type="text"
               value={this.state.userName}
               name="userName"
@@ -152,6 +154,7 @@ class ContactPage extends React.Component {
           <label htmlFor="userSurName">
             Wpisz swoję nazwisko:
             <input
+             className="formApplication--input"
               type="text"
               value={this.state.userSurName}
               name="userSurName"
@@ -166,6 +169,7 @@ class ContactPage extends React.Component {
           <label htmlFor="password">
             Wpisz hasło:
             <input
+             className="formApplication--input"
               type="password"
               value={this.state.password}
               name="password"
@@ -180,6 +184,7 @@ class ContactPage extends React.Component {
           <label htmlFor="email">
             Wpisz email:
             <input
+             className="formApplication--input"
               type="email"
               value={this.state.email}
               name="email"
