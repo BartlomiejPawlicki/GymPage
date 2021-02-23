@@ -1,0 +1,136 @@
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin: 15px 0;
+}
+
+.details .img__container {
+  display: flex;
+  min-width: 400px;
+  margin: 20px;
+  justify-content: center;
+  box-shadow: 1px 1px 3px rgb(17, 17, 17); 
+  padding: 20px 0 20px 0;
+}
+
+.img {
+  min-width: 350px;
+}
+
+.box__details {
+  max-width: 500px;
+  width: 100%;
+  margin: 20px;
+  min-height: 250px;
+}
+
+.box__details h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(71, 68, 68);
+  font-size: 2rem;
+  padding-bottom: 15px;
+  margin-top: 20px;
+}
+.box__details h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: rgb(218, 92, 83);
+}
+
+.taste {
+  margin-top: 20px;
+  height: 35px;
+}
+
+.cart__button {
+  cursor: pointer;
+  margin-top: 70px;
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: #3cbabe;
+  border: 2px solid #3cbabe;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 600;
+}
+.cart__button:hover {
+  background-color: #3cbabe;
+  color: #ffffff;
+  border-bottom: 2px solid #319598;
+}
+
+.taste__button {
+  border: 2px solid #555;
+  outline: none;
+  cursor: pointer;
+  color: #555;
+  margin-right: 5px;
+  margin-top: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius:4px;
+  font-weight: 600;
+  margin:20px 5px 0 0;
+}
+.taste__button:hover{
+  color:#ffffff;
+  background-color: #555;
+}
+
+@media (max-width: 890px) {
+  .details .img__container {
+    flex-direction: column;
+    box-shadow: 1px 1px 3px rgb(17, 17, 17); 
+    min-width: 300px;
+  }
+  .box__details h2 {
+    text-align: center;
+  }
+  .box__details h3 {
+    text-align: center;
+  }
+  .box__details {
+    margin: 0;
+  }
+  .box__details p {
+    margin: 10px;
+    text-align: center;
+    margin: auto 20px;
+  }
+  .img {
+    min-width: 10px;
+  }
+  .taste {
+    padding-top: 20px;
+    display: flex;
+    margin: auto 15px;
+    justify-content: center;
+  }
+  .taste__button {
+    width: 100px;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .taste {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
