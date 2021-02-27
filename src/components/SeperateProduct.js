@@ -1,15 +1,17 @@
-import React, { useContext, useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useContext} from "react";
+import { Link, useParams} from "react-router-dom";
 import { DataContext } from "./DataProvider";
 import '../style/SeperateProduct.css'
 
 export default function SeperateProduct() {
   const { id } = useParams();
 
-  const [products, setProducts] = useContext(DataContext);
+  const value =  useContext(DataContext)
+  const [products] = value.products 
+  const addCart = value.addCart 
 
   const details = products.filter(
-    (product, index) => parseInt(product.id) === parseInt(id)
+    (product) => parseInt(product.id) === parseInt(id)
   );
 
   return (
@@ -17,18 +19,18 @@ export default function SeperateProduct() {
       {details.map((product) => (
         <div className="details" key={product.id}>
           <div className="img__container">
-            <img className="img" src={product.img}  />
+            <img className="img" src={product.img} alt=""  />
             <div className="box__details">
               <h2>{product.name}</h2>
               <h3>{product.cost}</h3>
               <p>{product.description}</p>
               <div className="taste">
                 {product.taste.map((single, index) => (
-                  <button className="taste__button" key={index}>{single}</button>
+                  <button  className="taste__button" key={index}>{single}</button>
                 ))}
               </div>
               <div className="cart">
-                <button className="cart__button">Add to Cart</button>
+                <Link to='/cart' onClick = {() => addCart(product.id)} className="cart__button">Add to Cart</Link>
               </div>
             </div>
           </div>

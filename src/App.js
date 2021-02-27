@@ -5,11 +5,12 @@ import Header from './Header';
 import Page from './Page';
 import Footer from './Footer';
 import Navigation from './Navigation';
+import { DataProvider } from "./components/DataProvider";
 
 class App extends Component {
   render() {
     return (
-      
+      <DataProvider>
       <Router>
       <div className="app">
       <section className="section_navigation">
@@ -28,6 +29,7 @@ class App extends Component {
         </footer>
       </div>
       </Router>
+      </DataProvider>
     )
   }
 }

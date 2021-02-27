@@ -1,7 +1,7 @@
 import React from "react";
-import '../style/CardIntroduction.css'
+import '../style/OffersIntroduction.css'
 
-function CardIntroduction() {
+function OffersIntroduction() {
   return (
     <>
       <div className="history">
@@ -22,4 +22,4 @@ function CardIntroduction() {
   );
 }
 
-export default CardIntroduction;
+export default OffersIntroduction;

@@ -1,8 +1,8 @@
 import React from "react";
 import Article from "../components/Article";
 import "../style/HomePage.css";
-import Cards from "../components/Cards";
-import CardIntroduction from '../components/CardIntroduction'
+import Offers from "../components/Offers";
+import OffersIntroduction from '../components/OffersIntroduction'
 const articles = [
   {
     id: 1,
@@ -34,8 +34,8 @@ const HomePage = () => {
 
   return (
     <>
-    <CardIntroduction/>
-      <Cards/>
+    <OffersIntroduction/>
+      <Offers/>
       <div className="home">{ArticleList}</div>
     </>
   );

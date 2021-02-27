@@ -1,8 +1,10 @@
-import React from "react";
-import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, {useContext, useState} from "react";
+import { NavLink} from "react-router-dom";
 import "./style/Navigation.css";
 import icon from "./pictures/logo-gym.png";
+import basket from '../src/pictures/basket.svg'
+import { DataContext } from "./components/DataProvider";
+
 
 const list = [
   { name: "Start", path: "/", exact: true },
@@ -18,6 +20,9 @@ const Navigation = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const value = useContext(DataContext);
+  const [cart] = value.cart;
+  
 
 
 
@@ -32,13 +37,19 @@ const Navigation = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+        <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img className="logo" src={icon} alt="logo" />
-        </Link>
+        </NavLink>
         <div className="menu-icon" onClick ={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
         </div>
         <ul className={click ? 'nav-menu active': 'nav-menu'}>{menu}</ul>
+        </div>
+        <div className="basket__icon">
+          <span>{cart.length}</span>
+          <NavLink to ='/cart'onClick={closeMobileMenu}>
+            <img src={basket} alt='' width='30'/>
+          </NavLink>
         </div>
     </nav>
   );

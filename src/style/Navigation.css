@@ -79,6 +79,21 @@
 .menu-icon {
   display: none;
 }
+.basket__icon {
+  position:relative;
+  margin-right:20px;
+}
+
+.basket__icon span {
+  background:crimson;
+  border-radius:20px;
+  color:White;
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  font-size:10px;
+  padding:5px;
+}
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
