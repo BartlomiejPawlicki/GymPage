@@ -20,7 +20,7 @@ const ProductListPage = () => {
               <h2 className="products__name">
                 <Link to={`/products/${product.id}`}>{product.name}</Link> 
                 </h2>
-              <h3 className="products__cost">{product.cost}</h3>
+              <h3 className="products__cost">{product.price} zł</h3>
               <div className="products__wrapper">
                 <button onClick = {() => addCart(product.id)} className="add__cart">
                   Add to cart

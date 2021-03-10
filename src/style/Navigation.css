@@ -1,5 +1,13 @@
 .navbar {
-  background: rgb(243, 243, 78);
+  background: rgb(195, 171, 34);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 171, 34, 1) 14%,
+    rgba(207, 202, 38, 1) 60%,
+    rgba(212, 213, 40, 1) 73%,
+    rgba(217, 226, 42, 1) 83%,
+    rgba(228, 253, 45, 0.9139005944174545) 100%
+  );
   height: 100px;
   display: flex;
   justify-content: center;
@@ -9,7 +17,6 @@
   top: 0;
   z-index: 999;
   width: 100%;
-  opacity: 0.9;
 }
 
 .navbar-container {
@@ -55,16 +62,17 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: rgb(59, 55, 55);
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  font-weight: bold;
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid rgb(73, 69, 69);
   transition: all 0.2s ease-out;
 }
 
@@ -80,19 +88,19 @@
   display: none;
 }
 .basket__icon {
-  position:relative;
-  margin-right:20px;
+  position: relative;
+  margin-right: 50px;
 }
 
 .basket__icon span {
-  background:crimson;
-  border-radius:20px;
-  color:White;
-  position:absolute;
-  top:-10px;
-  right:-10px;
-  font-size:10px;
-  padding:5px;
+  background: crimson;
+  border-radius: 20px;
+  color: White;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 10px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 960px) {
@@ -104,7 +112,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 60vh;
+    height: 62vh;
     position: absolute;
     top: 100px;
     left: -100%;
@@ -125,6 +133,7 @@
     padding: 2rem;
     width: 100%;
     display: table;
+    color:white;
   }
 
   .nav-links:hover {
@@ -177,5 +186,10 @@
   }
   .logo {
     position: fixed;
+  }
+  .basket__icon {
+    position: absolute;
+    right: 50px;
+    top: 20px;
   }
 }

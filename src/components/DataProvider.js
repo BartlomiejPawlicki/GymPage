@@ -7,219 +7,243 @@ export const DataProvider = (props) => {
     {
       id: 1,
       name: "białko",
-      cost: "45zł",
+      price: 45,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Whey_Pro_Gainer_1_i275_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 2,
       name: "gainer",
-      cost: "33zł",
+      price: 33,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Acceleration_i33363_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 3,
       name: "spalacz",
-      cost: "21zł",
+      price: 21,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Activator_i35133_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 4,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Gain_Fast_i487_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 5,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Whey_Pro_Gainer_1_i275_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 6,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Magnum_8000_i40612_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 7,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Up_i38760_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 8,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Whey_Pro_Gainer_1_i275_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 9,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Activator_i35133_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 10,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Acceleration_i33363_d250x250.jpg",
 
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 11,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Whey_Pro_Gainer_1_i275_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 12,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Activator_i35133_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 13,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Acceleration_i33363_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 14,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Whey_Pro_Gainer_1_i275_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 15,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Whey_Pro_Gainer_1_i275_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 16,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Activator_i35133_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 17,
       name: "gainer",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Acceleration_i33363_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 18,
       name: "kreatyna",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Acceleration_i33363_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 19,
       name: "forskolina",
-      cost: "88zł",
+      price: 88,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Whey_Pro_Gainer_1_i275_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
     {
       id: 20,
       name: "gainer",
-      cost: "88zł",
+      price: 33,
       img:
         "https://serve-cdn-assets.sfd.workers.dev/produkt_img/Mass_Acceleration_i33363_d250x250.jpg",
       taste: ["czekolada", "jabłko", "arbuz", "wanilia"],
       description:
         "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      count: 1,
     },
   ]);
 
   const [cart, setCart] = useState([]);
 
-  const addCart = (id) => {
-    const check = cart.every((item) => item.id !== id);
-    if (check) {
-      const data = products.filter((product) => {
-        return product.id === id;
-      });
-      setCart([...cart, ...data]);
-    } else {
-      alert("produkt został dodany");
-    }
-  };
+
+  const addCart = (id) =>{
+      const check = cart.every(item =>{
+          return item.id !== id
+      })
+      if(check){
+          const data = products.filter(product =>{
+              return product.id === id
+          })
+          setCart([...cart, ...data])
+      }
+      else alert("Produkt jest juz w koszyku, przejdz do koszyka aby zmienic ilosc")
+  }
+
+
 
   const value = {
     products: [products, setProducts],

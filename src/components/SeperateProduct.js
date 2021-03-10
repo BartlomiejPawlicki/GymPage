@@ -22,7 +22,7 @@ export default function SeperateProduct() {
             <img className="img" src={product.img} alt=""  />
             <div className="box__details">
               <h2>{product.name}</h2>
-              <h3>{product.cost}</h3>
+              <h3>{product.price} zł</h3>
               <p>{product.description}</p>
               <div className="taste">
                 {product.taste.map((single, index) => (

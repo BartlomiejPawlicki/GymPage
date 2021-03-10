@@ -10,17 +10,16 @@ div.app {
 }
 
 .section_navigation {
-  flex-basis: 13.8vh;
+  flex-basis: 15h;
 }
 
 header {
-  flex-basis: 61vh;
+  flex-basis: 63vh;
 }
 
 main {
-  flex-grow: 1;
-  flex-basis: 90vh;
   background:#fefffb;
+  flex-basis:80vh;
 }
 footer {
   flex-basis: 8vh;
