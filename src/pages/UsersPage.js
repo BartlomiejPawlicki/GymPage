@@ -1,52 +1,55 @@
-import React,{useState} from 'react'
-import '../style/UsersPage.css'
-
+import React, { useState, useEffect } from "react";
+import "../style/UsersPage.css";
+import ReactLoading from "react-loading";
 
 const UsersPage = () => {
-  const [users, setUsers] = useState([]);
+  const [posts, setPosts] = useState([]);
+  const [done, setDone] = useState(false);
 
-  const API = "https://randomuser.me/api/?results=10";
-
-  const handleDataFetch = async () => {
-    const res = await fetch(API);
-    const data = await res.json();
-    const results = data.results;
-
-    setUsers(results)
-
-
-  }; 
+  useEffect(() => {
+    setTimeout(() => {
+      fetch("https://randomuser.me/api/?results=15")
+        .then((response) => response.json())
+        .then(
+          (response) => {
+            console.log(response);
+            setDone(true);
+            setPosts(response.results);
+          },
+        );
+    }, 2500);
+  }, []);
 
   return (
-    <div className="users">
-      <ButtonFetchUsers click={handleDataFetch} />
-      {users ? <UsersList users={users} /> : null}
-    </div>
-  );
-};
-
-const UsersList = props => {
-  const users = props.users.map(user => (
-    <li className="users__list" key={user.login.uuid}>
-      <div className="users__person">
-    <img className="users__photo" src={user.picture.large} alt={user.name.last}/>
-    <div className="users__description">
-    <h4 className="users__header">{`${user.name.title} ${user.name.last}`}</h4>
-      <p>Hej! Jestem bardzo zadowolony. Znakomita !!!</p>
-    </div>
-      </div>
-     
-    </li>
-  ));
-
-  return <ul className="users__group">{users}</ul>;
-};
-
-const ButtonFetchUsers = ({ click }) => {
-  return (
-    <div>
-      <button className="users__button" onClick={click}>Wylosuj 10 zadowolonych użytkowników</button>
-    </div>
+    <>
+      {!done ? (
+        <div className="loader">
+          <ReactLoading type={"bars"} color={"black"} width={100} />
+        </div>
+      ) : (
+        <div className="users">
+          {posts.map((item, id) => (
+            <div className="users__container" key={id}>
+              <div className="users__header">
+                <h2>{item.login.username}</h2>
+              </div>
+              <div className="users__data">
+                <img
+                  alt={item.login.username}
+                  width="70px"
+                  src={item.picture.thumbnail}
+                />
+           <div className="users__paragraph">
+                <p>
+                  Hej, jestem bardzo zadowolony z usług siłowni gold's gym !
+                </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </>
   );
 };
 

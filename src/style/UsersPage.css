@@ -6,36 +6,36 @@
   margin: 20px;
 }
 
-.users__button {
-  display: flex;
-  padding: 10px;
-  flex-direction: flex-start;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-.users__list {
-  list-style: none;
+.users__container {
   margin: 20px;
-  border: 0.5px rgb(77, 81, 85) solid;
-  width: 650px;
   border-radius: 4px;
-  background:rgb(238, 238, 104);
+  background: radial-gradient(
+    circle at 50% 50%,
+    #ffff5b 0,
+    #ffff41 25%,
+    #ebfb20 50%,
+    #c7f200 75%,
+    #a0ea00 100%
+  );
 }
 
-
-    
-.users__header {
+.users__data {
   display: flex;
-  flex-direction: column;
-  padding-bottom:20px;
+  align-items: center;
 }
-.users__photo {
+
+.users__paragraph {
+  padding: 0 20px 0 20px;
+}
+
+.users__header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.users img {
   border-radius: 50%;
-}
-.users__group {
-  
+  margin: 20px;
 }
 
 .users__person {
@@ -43,10 +43,9 @@
   display: flex;
 }
 
-.users__description {
+.loader {
   display: flex;
-  align-items: center;
-  padding-left: 50px;
-  flex-direction:column;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }

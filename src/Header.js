@@ -13,7 +13,7 @@ const Header = () => {
         <>
         <Switch>
         <Route path="/" exact render = {() => (
-         <img src={picture2} alt="gym" />
+         <img src={picture1} alt="gym" />
      )} />
      <Route path="/products" render = {() => (
          <img src={picture3} alt="gym" />

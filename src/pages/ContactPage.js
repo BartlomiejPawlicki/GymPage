@@ -120,17 +120,7 @@ class ContactPage extends React.Component {
     };
   };
 
-  componentDidUpdate() {
-    if (this.state.message !== "") {
-      setTimeout(
-        () =>
-          this.setState({
-            message: "",
-          }),
-        3000
-      );
-    }
-  }
+
 
   render() {
     return (
