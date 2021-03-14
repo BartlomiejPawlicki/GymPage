@@ -22,6 +22,17 @@ const Navigation = () => {
   const value = useContext(DataContext);
   const [cart] = value.cart;
 
+  const [navbar, setNavbar] = useState(false)
+
+  const changeSize = () => {
+   if(window.scrollY >= 80) {
+     setNavbar(true)
+   }
+   else setNavbar(false)
+  }
+
+  window.addEventListener('scroll',changeSize)
+
   const menu = list.map((link) => (
     <li className="nav-item" key={link.name}>
       <NavLink
@@ -35,10 +46,10 @@ const Navigation = () => {
     </li>
   ));
   return (
-    <nav className="navbar">
+    <nav className={navbar ? 'navbar active' : 'navbar'}>
       <div className="navbar-container">
         <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu} >
-          <img className="logo" src={icon} alt="logo" />
+          <img className="logo" src={icon} alt="logo" height="30px"/>
         </NavLink>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -47,7 +58,7 @@ const Navigation = () => {
       </div>
       <div className="basket__icon">
         <span>{cart.length}</span>
-        <NavLink to="/cart" onClick={closeMobileMenu}>
+        <NavLink to="/cart" >
           <img src={basket} alt="" width="30" />
         </NavLink>
       </div>

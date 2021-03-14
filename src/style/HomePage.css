@@ -22,7 +22,7 @@
   transition: all 0.2s linear;
 }
 .advices:hover{
-  transform:scale(1.1)
+  transform:scale(0.95)
 }
 
 .advices__header {
@@ -48,3 +48,14 @@
 }
 .advices__paragraph {
 }
+
+@media (max-width:700px) {
+  .home {
+    display:flex;
+    flex-direction:column;
+  }
+  .advices {
+    margin-bottom:15px;
+  }
+}
+

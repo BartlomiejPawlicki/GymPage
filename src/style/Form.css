@@ -68,3 +68,9 @@ textarea {
   font-size: 30px;
   color: rgb(29, 29, 29);
 }
+
+@media(max-width:800px) {
+  form label {
+    margin-right:0px;
+  }
+}
