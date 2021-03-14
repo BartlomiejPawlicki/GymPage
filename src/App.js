@@ -6,13 +6,15 @@ import Page from './Page';
 import Footer from './Footer';
 import Navigation from './Navigation';
 import { DataProvider } from "./components/DataProvider";
+import ScrollToTop from './components/ScrollToTop'
 
 class App extends Component {
   render() {
     return (
       <DataProvider>
       <Router>
-      <div className="app">
+      <ScrollToTop />
+      <div id="top"className="app">
       <section className="section_navigation">
           {<Navigation/>}
         </section>

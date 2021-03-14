@@ -10,13 +10,11 @@ const UsersPage = () => {
     setTimeout(() => {
       fetch("https://randomuser.me/api/?results=15")
         .then((response) => response.json())
-        .then(
-          (response) => {
-            console.log(response);
-            setDone(true);
-            setPosts(response.results);
-          },
-        );
+        .then((response) => {
+          setDone(true);
+          setPosts(response.results);
+        });
+     
     }, 2500);
   }, []);
 
@@ -24,7 +22,7 @@ const UsersPage = () => {
     <>
       {!done ? (
         <div className="loader">
-          <ReactLoading type={"bars"} color={"black"} width={100} />
+          <ReactLoading type={"bars"} color={"black"} width={400} />
         </div>
       ) : (
         <div className="users">
@@ -39,10 +37,10 @@ const UsersPage = () => {
                   width="70px"
                   src={item.picture.thumbnail}
                 />
-           <div className="users__paragraph">
-                <p>
-                  Hej, jestem bardzo zadowolony z usług siłowni gold's gym !
-                </p>
+                <div className="users__paragraph">
+                  <p>
+                    Hej, jestem bardzo zadowolony z usług siłowni gold's gym !
+                  </p>
                 </div>
               </div>
             </div>
