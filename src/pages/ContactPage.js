@@ -2,6 +2,8 @@ import React from "react";
 import "../style/Form.css";
 
 class ContactPage extends React.Component {
+  userData;
+
   state = {
     userName: "",
     userSurName: "",
@@ -17,6 +19,33 @@ class ContactPage extends React.Component {
       accept: false,
     },
   };
+
+  //component life cycle
+
+  componentDidMount() {
+    this.userData = JSON.parse(localStorage.getItem("user"));
+    if (localStorage.getItem("user")) {
+      this.setState({
+        email: this.userData.email,
+        userName: this.userData.userName,
+        userSurName: this.userData.userSurName,
+        password: this.userData.password,
+        accept: this.userData.accept,
+      });
+    } else {
+      this.setState({
+        userName: "",
+        userSurName: "",
+        email: "",
+        password: "",
+        accept: false,
+      });
+    }
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem("user", JSON.stringify(nextState));
+  }
 
   checkValue = {
     userName__incorrect:
@@ -120,16 +149,18 @@ class ContactPage extends React.Component {
     };
   };
 
-
-
   render() {
     return (
       <>
-        <form onSubmit={this.handleSubmit} noValidate className="formApplication">
+        <form
+          onSubmit={this.handleSubmit}
+          noValidate
+          className="formApplication"
+        >
           <label htmlFor="userName">
             Wpisz swoję imię:
             <input
-            className="formApplication--input"
+              className="formApplication--input"
               type="text"
               value={this.state.userName}
               name="userName"
@@ -144,7 +175,7 @@ class ContactPage extends React.Component {
           <label htmlFor="userSurName">
             Wpisz swoję nazwisko:
             <input
-             className="formApplication--input"
+              className="formApplication--input"
               type="text"
               value={this.state.userSurName}
               name="userSurName"
@@ -159,7 +190,7 @@ class ContactPage extends React.Component {
           <label htmlFor="password">
             Wpisz hasło:
             <input
-             className="formApplication--input"
+              className="formApplication--input"
               type="password"
               value={this.state.password}
               name="password"
@@ -174,7 +205,7 @@ class ContactPage extends React.Component {
           <label htmlFor="email">
             Wpisz email:
             <input
-             className="formApplication--input"
+              className="formApplication--input"
               type="email"
               value={this.state.email}
               name="email"
@@ -205,9 +236,9 @@ class ContactPage extends React.Component {
             )}
           </label>
 
-          <button className="button">Zatwierdź</button>
+          <button className="approve">Zatwierdź</button>
           {this.state.message && (
-            <h3 className="confirm">{this.state.message}</h3>
+            <h3 className="approve__header">{this.state.message}</h3>
           )}
         </form>
       </>

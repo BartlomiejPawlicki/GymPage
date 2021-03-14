@@ -14,7 +14,7 @@ const UsersPage = () => {
           setDone(true);
           setPosts(response.results);
         });
-     
+
     }, 2500);
   }, []);
 

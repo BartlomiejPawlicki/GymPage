@@ -102,12 +102,12 @@
 .menu-icon {
   display: none;
 }
-.basket__icon {
+.basket{
   position: relative;
   margin-right: 50px;
 }
 
-.basket__icon span {
+.basket span {
   background: crimson;
   border-radius: 20px;
   color: White;
@@ -187,7 +187,7 @@
   .logo {
     position: fixed;
   }
-  .basket__icon {
+  .basket {
     position: absolute;
     right: 50px;
     top: 30px;

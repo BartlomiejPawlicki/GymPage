@@ -38,13 +38,13 @@ const Offers = () => {
               src={adminPhoto} alt ="admin"
               text="Zaloguj się na stronę admina"
               label="Panel Admin"
-              path="/ProductPage"
+              path="/login"
             />
             <OffersItem
-              src={adminSecondPhoto}
-              text="Zaloguj się na stronę admina" alt="secondAdmin"
+              src={adminSecondPhoto}  alt="secondAdmin"
+              text="Zaloguj się na stronę admina"
               label="Panel Admin"
-              path="/ProductPage"
+              path="/login"
             />
             </ul>
         </div>

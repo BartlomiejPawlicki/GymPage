@@ -56,7 +56,7 @@ const Navigation = () => {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>{menu}</ul>
       </div>
-      <div className="basket__icon">
+      <div className="basket">
         <span>{cart.length}</span>
         <NavLink to="/cart" >
           <img src={basket} alt="" width="30" />

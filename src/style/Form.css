@@ -41,10 +41,22 @@ textarea {
   margin-top: 10px;
 }
 
-.button {
+.approve {
   width: 150px;
   height: 30px;
   margin-bottom: 15px;
+  outline:none;
+  font-weight: bold;
+  background-color: rgba(252, 251, 250, 0.801);
+  border-radius:5px;
+  cursor:pointer;
+  color:black;  
+  border:none;
+}
+.approve:hover{
+color:white;
+background:rgb(61, 61, 59);
+transition: all 0.3s ease-out;
 }
 .check {
   padding: 12px;
@@ -63,7 +75,7 @@ textarea {
   padding: 5px 0 0 0;
 }
 
-.confirm {
+.approve__header {
   margin-bottom: 20px;
   font-size: 30px;
   color: rgb(29, 29, 29);

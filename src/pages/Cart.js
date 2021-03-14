@@ -20,7 +20,7 @@ export default function Cart() {
   }, [cart]);
 
   if (cart.length === 0) {
-    return <h1 style={{ fontSize: "2rem" }}>Nie masz produktów w karcie </h1>;
+    return <h1 style={{ fontSize: "2rem", paddingTop:"300px" }}>Nie masz produktów w karcie </h1>;
   }
 
   const reduction = (id) => {
