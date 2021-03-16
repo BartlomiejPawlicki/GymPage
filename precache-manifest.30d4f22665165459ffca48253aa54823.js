@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7e844bfe6345a66fe319",
+    "revision": "13a1ecfb89eb3929fac9",
     "url": "/GymPage/static/css/main.4de98350.chunk.css"
   },
   {
-    "revision": "7e844bfe6345a66fe319",
-    "url": "/GymPage/static/js/main.69f154d4.chunk.js"
+    "revision": "13a1ecfb89eb3929fac9",
+    "url": "/GymPage/static/js/main.59b506fd.chunk.js"
   },
   {
     "revision": "22f9b5694c56f036149c",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/GymPage/static/media/basket.c24123cc.svg"
   },
   {
-    "revision": "bcf37c96a5560d36260c2f22b44663c7",
+    "revision": "e7ab2ac400554921b092ebde289b3165",
     "url": "/GymPage/index.html"
   }
 ];
