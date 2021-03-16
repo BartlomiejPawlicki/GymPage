@@ -1,0 +1,23 @@
+{
+  "main.css": "/GymPage/static/css/main.4de98350.chunk.css",
+  "main.js": "/GymPage/static/js/main.69f154d4.chunk.js",
+  "main.js.map": "/GymPage/static/js/main.69f154d4.chunk.js.map",
+  "runtime~main.js": "/GymPage/static/js/runtime~main.0f8bd0f9.js",
+  "runtime~main.js.map": "/GymPage/static/js/runtime~main.0f8bd0f9.js.map",
+  "static/js/2.14dd36b9.chunk.js": "/GymPage/static/js/2.14dd36b9.chunk.js",
+  "static/js/2.14dd36b9.chunk.js.map": "/GymPage/static/js/2.14dd36b9.chunk.js.map",
+  "index.html": "/GymPage/index.html",
+  "precache-manifest.3b3b96cd48a4112e25b953d3200a63f2.js": "/GymPage/precache-manifest.3b3b96cd48a4112e25b953d3200a63f2.js",
+  "service-worker.js": "/GymPage/service-worker.js",
+  "static/css/main.4de98350.chunk.css.map": "/GymPage/static/css/main.4de98350.chunk.css.map",
+  "static/media/adm.jpeg": "/GymPage/static/media/adm.fe839e7d.jpeg",
+  "static/media/adminpanel2.jpg": "/GymPage/static/media/adminpanel2.8d202e4e.jpg",
+  "static/media/basket.svg": "/GymPage/static/media/basket.c24123cc.svg",
+  "static/media/formularz.png": "/GymPage/static/media/formularz.02e09d5d.png",
+  "static/media/gym1.jpg": "/GymPage/static/media/gym1.6a1ada5e.jpg",
+  "static/media/gym2.jpg": "/GymPage/static/media/gym2.6059f604.jpg",
+  "static/media/gym4.jpg": "/GymPage/static/media/gym4.d767b950.jpg",
+  "static/media/logo-gym.png": "/GymPage/static/media/logo-gym.84d93033.png",
+  "static/media/machines.jpg": "/GymPage/static/media/machines.12ba5215.jpg",
+  "static/media/product.jpg": "/GymPage/static/media/product.c12f79c4.jpg"
+}
