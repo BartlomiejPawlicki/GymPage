@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../components/DataProvider";
-import "../style/SeperateProduct.css";
+import "../style/SeparateProduct.css";
 import { Link } from "react-router-dom";
 
 export default function Cart() {

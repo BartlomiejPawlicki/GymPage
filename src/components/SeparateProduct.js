@@ -1,9 +1,9 @@
 import React, { useContext} from "react";
 import { Link, useParams} from "react-router-dom";
 import { DataContext } from "./DataProvider";
-import '../style/SeperateProduct.css'
+import '../style/SeparateProduct.css'
 
-export default function SeperateProduct() {
+export default function SeparateProduct() {
   const { id } = useParams();
 
   const value =  useContext(DataContext)
