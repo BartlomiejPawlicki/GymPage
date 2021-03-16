@@ -152,94 +152,92 @@ class ContactPage extends React.Component {
   render() {
     return (
       <>
-        <form
-          onSubmit={this.handleSubmit}
-          noValidate
-          className="formApplication"
-        >
-          <label htmlFor="userName">
-            Wpisz swoję imię:
-            <input
-              className="formApplication--input"
-              type="text"
-              value={this.state.userName}
-              name="userName"
-              id="userName"
-              placeholder="Wpisz swoję imię"
-              onChange={this.handleChange}
-            />
-            {this.state.errors.userName && (
-              <span> {this.checkValue.userName__incorrect} </span>
-            )}
-          </label>
-          <label htmlFor="userSurName">
-            Wpisz swoję nazwisko:
-            <input
-              className="formApplication--input"
-              type="text"
-              value={this.state.userSurName}
-              name="userSurName"
-              id="userSurName"
-              placeholder="Wpisz swoję nazwisko"
-              onChange={this.handleChange}
-            />
-            {this.state.errors.userSurName && (
-              <span> {this.checkValue.userSurName__incorrect} </span>
-            )}
-          </label>
-          <label htmlFor="password">
-            Wpisz hasło:
-            <input
-              className="formApplication--input"
-              type="password"
-              value={this.state.password}
-              name="password"
-              id="password"
-              placeholder="Wpisz swoje hasło"
-              onChange={this.handleChange}
-            />
-            {this.state.errors.password && (
-              <span> {this.checkValue.password__incorrect} </span>
-            )}
-          </label>
-          <label htmlFor="email">
-            Wpisz email:
-            <input
-              className="formApplication--input"
-              type="email"
-              value={this.state.email}
-              name="email"
-              id="email"
-              placeholder="Wpisz swój email"
-              onChange={this.handleChange}
-            />
-            {this.state.errors.email && (
-              <span> {this.checkValue.email__incorrect} </span>
-            )}
-          </label>
-          <label>
-            Wpisz swój komentarz:
-            <textarea name="textArea"></textarea>
-          </label>
-          <label className="check__label" htmlFor="accept">
-            Potwierdzam danę
-            <input
-              className="check"
-              type="checkbox"
-              id="accept"
-              name="accept"
-              checked={this.state.accept}
-              onChange={this.handleChange}
-            ></input>
-            {this.state.errors.accept && (
-              <span> {this.checkValue.accept__incorrect} </span>
-            )}
-          </label>
+        <form className="formData" onSubmit={this.handleSubmit} noValidate>
+          <div className="formApplication">
+            <label htmlFor="userName">
+              Wpisz swoję imię:
+              <input
+                className="formApplication--input"
+                type="text"
+                value={this.state.userName}
+                name="userName"
+                id="userName"
+                placeholder="Wpisz swoję imię"
+                onChange={this.handleChange}
+              />
+              {this.state.errors.userName && (
+                <span> {this.checkValue.userName__incorrect} </span>
+              )}
+            </label>
+            <label htmlFor="userSurName">
+              Wpisz swoję nazwisko:
+              <input
+                className="formApplication--input"
+                type="text"
+                value={this.state.userSurName}
+                name="userSurName"
+                id="userSurName"
+                placeholder="Wpisz swoję nazwisko"
+                onChange={this.handleChange}
+              />
+              {this.state.errors.userSurName && (
+                <span> {this.checkValue.userSurName__incorrect} </span>
+              )}
+            </label>
+            <label htmlFor="password">
+              Wpisz hasło:
+              <input
+                className="formApplication--input"
+                type="password"
+                value={this.state.password}
+                name="password"
+                id="password"
+                placeholder="Wpisz swoje hasło"
+                onChange={this.handleChange}
+              />
+              {this.state.errors.password && (
+                <span> {this.checkValue.password__incorrect} </span>
+              )}
+            </label>
+            <label htmlFor="email">
+              Wpisz email:
+              <input
+                className="formApplication--input"
+                type="email"
+                value={this.state.email}
+                name="email"
+                id="email"
+                placeholder="Wpisz swój email"
+                onChange={this.handleChange}
+              />
+              {this.state.errors.email && (
+                <span> {this.checkValue.email__incorrect} </span>
+              )}
+            </label>
+            <label>
+              Wpisz swój komentarz:
+              <textarea name="textArea"></textarea>
+            </label>
+            <label className="check__label" htmlFor="accept">
+              Potwierdzam danę
+              <input
+                className="check"
+                type="checkbox"
+                id="accept"
+                name="accept"
+                checked={this.state.accept}
+                onChange={this.handleChange}
+              ></input>
+              {this.state.errors.accept && (
+                <span> {this.checkValue.accept__incorrect} </span>
+              )}
+            </label>
 
-          <button className="approve">Zatwierdź</button>
-          {this.state.message && (
-            <h3 className="approve__header">{this.state.message}</h3>
-          )}
+            <button className="approve">Zatwierdź</button>
+            {this.state.message && (
+              <h3 className="approve__header">{this.state.message}</h3>
+            )}
+          </div>
         </form>
       </>
     );

@@ -7,15 +7,19 @@ const UsersPage = () => {
   const [done, setDone] = useState(false);
 
   useEffect(() => {
+    let isSubscribed = true;
     setTimeout(() => {
       fetch("https://randomuser.me/api/?results=15")
         .then((response) => response.json())
         .then((response) => {
+          if (isSubscribed) {
           setDone(true);
           setPosts(response.results);
-        });
-
+        }})
+       
+    
     }, 2500);
+    return () => isSubscribed = false
   }, []);
 
   return (

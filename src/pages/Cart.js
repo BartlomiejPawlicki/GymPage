@@ -34,7 +34,6 @@ export default function Cart() {
   const addition = (id) => {
  
     cart.forEach((item) => {
-      console.log(item)
       if (item.id === id) {
         item.count += 1;
       }
