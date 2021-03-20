@@ -1,0 +1,32 @@
+.entrance {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-color:rgb(230, 230, 99);
+    border:3px black solid;
+    & label {
+        padding:15px;
+        font-size:25px;
+    }
+    & input {
+        width:200px;
+        height:35px;
+    }
+    &__container {
+        display:flex;
+        border:3px rgb(34, 32, 32) solid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 15px 0;
+        margin: 30px 30px;
+    }
+    & button {
+        width:100px;
+        height:30px;
+        background:white;
+        border:1px rgb(206, 188, 188) solid;
+    }
+    }
