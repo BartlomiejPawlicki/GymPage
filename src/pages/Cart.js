@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../components/DataProvider";
-import "../style/SeparateProduct.css";
+import "../style/Cart.scss";
 import { Link } from "react-router-dom";
 
 export default function Cart() {
@@ -20,7 +20,7 @@ export default function Cart() {
   }, [cart]);
 
   if (cart.length === 0) {
-    return <h1 style={{ fontSize: "2rem", paddingTop:"300px" }}>Nie masz produktów w karcie </h1>;
+    return <h1 style={{ fontSize: "2rem", paddingTop:"300px", textAlign:"center" }}>Nie masz produktów w karcie </h1>;
   }
 
   const reduction = (id) => {
@@ -53,9 +53,9 @@ export default function Cart() {
 
   return (
     <>
-    <h1 style={{paddingTop:"30px"}}>Twój koszyk</h1>
+    <h1 style={{paddingTop:"30px",textAlign:"center",fontSize:"30px"}}>Twój koszyk</h1>
       {cart.map((product, index) => (
-        <div className="details products" key={index}>
+        <div className="cart" key={index}>
           <div className="img__container">
             <img className="img" src={product.img} alt="" />
             <div className="box__details">

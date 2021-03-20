@@ -1,7 +1,7 @@
 import React, { useContext} from "react";
 import { Link, useParams} from "react-router-dom";
 import { DataContext } from "./DataProvider";
-import '../style/SeparateProduct.css'
+import '../style/SeparateProduct.scss'
 
 export default function SeparateProduct() {
   const { id } = useParams();
@@ -17,7 +17,7 @@ export default function SeparateProduct() {
   return (
     <>
       {details.map((product) => (
-        <div className="details" key={product.id}>
+        <div className="product__container" key={product.id}>
           <div className="img__container">
             <img className="img" src={product.img} alt=""  />
             <div className="box__details">

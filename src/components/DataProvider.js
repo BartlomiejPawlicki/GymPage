@@ -236,8 +236,10 @@ export const DataProvider = (props) => {
       })
       if(check){
           const data = products.filter(product =>{
-              return product.id === id
+              return product.id === id 
+           
           })
+          alert("dodano produkt do koszyka")
           setCart([...cart, ...data])
       }
       else alert("Produkt jest juz w koszyku, przejdz do koszyka aby zmienic ilosc")
