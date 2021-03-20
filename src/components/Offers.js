@@ -1,6 +1,6 @@
 import React from "react";
 import OffersItem from "./OffersItem";
-import "../style/Offers.css";
+import "../style/Offers.scss";
 import productImage from '../pictures/product.jpg'
 import machineImage from '../pictures/machines.jpg'
 import contactForm from '../pictures/formularz.png'
@@ -10,7 +10,7 @@ import adminSecondPhoto from '../pictures/adminpanel2.jpg'
 const Offers = () => {
   return (
     <div className="offers">
-      <h1>Spójrz na naszą ofertę</h1>
+      <h1 className="offers__header">Spójrz na naszą ofertę</h1>
       <div className="offers__container">
         <div className="offers__wrapper">
           <ul className="offers__item">
