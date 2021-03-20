@@ -1,6 +1,6 @@
 import React from "react";
 import Article from "../components/Article";
-import "../style/HomePage.css";
+import "../style/HomePage.scss";
 import Offers from "../components/Offers";
 import OffersIntroduction from '../components/OffersIntroduction'
 const articles = [
