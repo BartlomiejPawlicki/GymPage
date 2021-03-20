@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import {DataContext} from '../components/DataProvider'
 import { Link } from "react-router-dom";
-import "../style/ProductPageList.css";
+import "../style/ProductPageList.scss";
  
 const ProductListPage = () => {
   const value =  useContext(DataContext)
@@ -15,7 +15,7 @@ const ProductListPage = () => {
         <ul className="products">
           {products.map((product) => (
             <li className="products__list" key={product.id}>
-                  <Link to={`/products/${product.id}`}><img className='product__img' src={product.img} alt="protein" /></Link>
+                  <Link to={`/products/${product.id}`}><img className='products__img' src={product.img} alt="protein" /></Link>
             
               <h2 className="products__name">
                 <Link to={`/products/${product.id}`}>{product.name}</Link> 
