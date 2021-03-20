@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import {BrowserRouter as Router} from "react-router-dom";
 import Header from './Header';
 import Page from './Page';
@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <DataProvider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <div id="top"className="app">
       <section className="section_navigation">

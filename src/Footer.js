@@ -1,38 +1,38 @@
 import React from "react";
-import "./style/Footer.css";
+import "./style/Footer.scss";
 import { Link } from "react-router-dom";
-import {Button} from './components/Button'
+import { Button } from "./components/Button";
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <section className="footer-subscription">
-        <p className="footer-subscription-heading">
+      <section className="subscription">
+        <p className="subscription__heading">
           Zapisz się do naszego klubu
         </p>
-        <p className="footer-subscription-text"></p>
-        <div className="input-areas">
+        <p className="subscription__text"></p>
+        <div className="subscription__area">
           <form>
             <input
               type="email"
               name="email"
               placeholder="Twój email"
-              className="footer-input"
+              className="subscription__input"
             />
             <Button buttonStyle="btn--outline">Subskrypcja</Button>
           </form>
         </div>
       </section>
-      <div className="footer-links">
-        <div className="footer-link-wrapper">
-          <div className="footer-link-items">
+      <div className="links">
+        <div className="links__wrapper">
+          <div className="links__item">
             <h2>O nas</h2>
             <Link to="/"></Link>
             <Link to="/">Jak działamy</Link>
             <Link to="/">Ile mamy oddziałów na świecie</Link>
             <Link to="/">Historia Gold's Gym</Link>
           </div>
-          <div className="footer-link-items">
+          <div className="links__item">
             <h2>Kontakt</h2>
             <Link to="/">Wypełni formularz kontaktowy</Link>
             <Link to="/">Kariera u nas</Link>
@@ -40,15 +40,15 @@ const Footer = () => {
             <Link to="/">Nasz zespół!</Link>
           </div>
         </div>
-        <div className="footer-link-wrapper">
-          <div className="footer-link-items">
+        <div className="links__wrapper">
+          <div className="links__item">
             <h2>Informacje</h2>
             <Link to="/">Siłownia a pandemia</Link>
             <Link to="/">Godziny otwarcia</Link>
             <Link to="/">Cennik</Link>
             <Link to="/">Karnet</Link>
           </div>
-          <div className="footer-link-items">
+          <div className="links__item">
             <h2>Social Media</h2>
             <Link to="/">Youtube</Link>
             <Link to="/">Instagram</Link>
@@ -57,11 +57,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <section className="social-media">
-        <div className="social-media-wrap">
+      <section className="socialmedia">
+        <div className="socialmedia__wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
-              Gold's Gym <i className="fas fa-dumbbell"/> 
+              Gold's Gym <i className="fas fa-dumbbell" />
             </Link>
           </div>
           <small className="website-rights">GOLD'S GYM ©</small>
