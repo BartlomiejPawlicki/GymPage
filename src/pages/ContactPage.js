@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Form.css";
+import "../style/Form.scss";
 
 class ContactPage extends React.Component {
   userData;
@@ -152,12 +152,11 @@ class ContactPage extends React.Component {
   render() {
     return (
       <>
-        <form className="formData" onSubmit={this.handleSubmit} noValidate>
-          <div className="formApplication">
+        <form className="form-container" onSubmit={this.handleSubmit} noValidate>
+          <div className="contactform">
             <label htmlFor="userName">
               Wpisz swoję imię:
               <input
-                className="formApplication--input"
                 type="text"
                 value={this.state.userName}
                 name="userName"
@@ -172,7 +171,6 @@ class ContactPage extends React.Component {
             <label htmlFor="userSurName">
               Wpisz swoję nazwisko:
               <input
-                className="formApplication--input"
                 type="text"
                 value={this.state.userSurName}
                 name="userSurName"
@@ -187,7 +185,6 @@ class ContactPage extends React.Component {
             <label htmlFor="password">
               Wpisz hasło:
               <input
-                className="formApplication--input"
                 type="password"
                 value={this.state.password}
                 name="password"
@@ -202,7 +199,6 @@ class ContactPage extends React.Component {
             <label htmlFor="email">
               Wpisz email:
               <input
-                className="formApplication--input"
                 type="email"
                 value={this.state.email}
                 name="email"
@@ -216,12 +212,12 @@ class ContactPage extends React.Component {
             </label>
             <label>
               Wpisz swój komentarz:
-              <textarea name="textArea"></textarea>
+              <textarea></textarea>
             </label>
-            <label className="check__label" htmlFor="accept">
+            <label className="contactform__checkbox--label" htmlFor="accept">
               Potwierdzam danę
               <input
-                className="check"
+                className="contactform__checkbox"
                 type="checkbox"
                 id="accept"
                 name="accept"
@@ -233,9 +229,9 @@ class ContactPage extends React.Component {
               )}
             </label>
 
-            <button className="approve">Zatwierdź</button>
+            <button className="contactform__button">Zatwierdź</button>
             {this.state.message && (
-              <h3 className="approve__header">{this.state.message}</h3>
+              <h3 className="contactform__approval">{this.state.message}</h3>
             )}
           </div>
         </form>
