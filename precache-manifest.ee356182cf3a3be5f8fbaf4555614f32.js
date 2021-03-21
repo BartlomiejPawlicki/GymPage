@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "daceb7502f4063668e5c",
-    "url": "/GymPage/static/css/main.4de98350.chunk.css"
+    "revision": "26fb9b55f174c8db793a",
+    "url": "/GymPage/static/css/main.cb23e866.chunk.css"
   },
   {
-    "revision": "daceb7502f4063668e5c",
-    "url": "/GymPage/static/js/main.fb2319c5.chunk.js"
+    "revision": "26fb9b55f174c8db793a",
+    "url": "/GymPage/static/js/main.cd73080c.chunk.js"
   },
   {
     "revision": "22f9b5694c56f036149c",
     "url": "/GymPage/static/js/runtime~main.0f8bd0f9.js"
   },
   {
-    "revision": "679f495286fc314eb154",
-    "url": "/GymPage/static/js/2.14dd36b9.chunk.js"
+    "revision": "44b030c8ae84642e51bf",
+    "url": "/GymPage/static/js/2.79d23f2f.chunk.js"
   },
   {
     "revision": "6059f60420929c193e3fe2a9feae1877",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/GymPage/static/media/basket.c24123cc.svg"
   },
   {
-    "revision": "ec4a923783ef6e74bbe002faef0ad306",
+    "revision": "069158f5c4dfc47cd196b67c8781ce42",
     "url": "/GymPage/index.html"
   }
 ];
