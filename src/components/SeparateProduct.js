@@ -17,9 +17,9 @@ export default function SeparateProduct() {
   return (
     <>
       {details.map((product) => (
-        <div className="product__container" key={product.id}>
+        <div className="details" key={product.id}>
           <div className="img__container">
-            <img className="img" src={product.img} alt=""  />
+            <img className="img" src={product.img} alt=""/>
             <div className="box__details">
               <h2>{product.name}</h2>
               <h3>{product.price} zł</h3>
@@ -29,8 +29,8 @@ export default function SeparateProduct() {
                   <button  className="taste__button" key={index}>{single}</button>
                 ))}
               </div>
-              <div className="cart">
-                <Link to='/cart' onClick = {() => addCart(product.id)} className="cart__button">Add to Cart</Link>
+              <div className="add">
+                <Link to='/cart' onClick = {() => addCart(product.id)} className="add__button">Add to Cart</Link>
               </div>
             </div>
           </div>

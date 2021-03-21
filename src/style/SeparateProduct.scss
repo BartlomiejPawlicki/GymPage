@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.details .img__container {
+.img__container {
   display: flex;
   min-width: 400px;
   margin: 20px;
@@ -24,27 +25,43 @@
   width: 100%;
   margin: 20px;
   min-height: 250px;
-}
-
-.box__details h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: rgb(71, 68, 68);
-  font-size: 2rem;
-  padding-bottom: 15px;
-  margin-top: 20px;
-}
-.box__details h3 {
-  margin-bottom: 20px;
-  font-size: 25px;
-  color: rgb(218, 92, 83);
+  & h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(71, 68, 68);
+    font-size: 2rem;
+    padding-bottom: 15px;
+    margin-top: 20px;
+  }
+  & h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: rgb(218, 92, 83);
+  }
 }
 
 .taste {
   margin-top: 20px;
+  &__button {
+    border: 2px solid #555;
+    outline: none;
+    cursor: pointer;
+    color: #555;
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 20px 5px 0 0;
+    &:hover {
+      color: #ffffff;
+      background-color: #555;
+    }
+  }
 }
 
-.cart__button {
+.add__button {
   cursor: pointer;
   margin-top: 40px;
   width: 150px;
@@ -56,50 +73,32 @@
   display: inline-block;
   font-weight: 600;
   padding: 10px 25px;
+  &:hover {
+    background-color: #3cbabe;
+    color: #ffffff;
+    border-bottom: 2px solid #319598;
+  }
 }
-.cart__button:hover {
-  background-color: #3cbabe;
-  color: #ffffff;
-  border-bottom: 2px solid #319598;
-}
-
-.taste__button {
-  border: 2px solid #555;
-  outline: none;
-  cursor: pointer;
-  color: #555;
-  margin-right: 5px;
-  margin-top: 10px;
-  width: 80px;
-  height: 30px;
-  border-radius: 4px;
-  font-weight: 600;
-  margin: 20px 5px 0 0;
-}
-.taste__button:hover {
-  color: #ffffff;
-  background-color: #555;
-}
-
 @media (max-width: 890px) {
-  .details .img__container {
+  .img__container {
     flex-direction: column;
     box-shadow: 1px 1px 3px rgb(17, 17, 17);
     min-width: 300px;
   }
-  .box__details h2 {
-    text-align: center;
-  }
-  .box__details h3 {
-    text-align: center;
-  }
+
   .box__details {
     margin: 0;
-  }
-  .box__details p {
-    margin: 10px;
-    text-align: center;
-    margin: auto 20px;
+    & h2 {
+      text-align: center;
+    }
+    & h3 {
+      text-align: center;
+    }
+    & p {
+      margin: 10px;
+      text-align: center;
+      margin: auto 20px;
+    }
   }
   .img {
     min-width: 10px;
@@ -109,14 +108,14 @@
     display: flex;
     margin: auto 15px;
     justify-content: center;
+    &__button {
+      width: 100px;
+    }
   }
-  .taste__button {
-    width: 100px;
-  }
-  .cart {
-    display: flex;
+  .add {
     justify-content: center;
     margin-top: 10px;
+    display: flex;
   }
 }
 
@@ -127,60 +126,8 @@
     justify-items: center;
   }
 
-  .cart {
+  .add {
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-}
-
-/*Cart js //////////////////////////////////////////////////////////////////////////////*/
-
-.delete {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  color: crimson;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.total {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0 30px 0;
-}
-
-.total a {
-  margin-left: 50px;
-  background: #333;
-  color: white;
-  padding: 10px 25px;
-  text-decoration: none;
-  margin-right: 30px;
-}
-
-.amount button {
-  margin-top: 15px;
-  background-color: rgb(210, 207, 235);
-  outline: none;
-  padding: 5px;
-  border: black;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-weight: bold;
-}
-.amount span {
-  font-weight: bold;
-  margin: 3px 3px;
-}
-
-@media (max-width: 900px) {
-  .amount {
-    text-align: center;
+    margin-top: 10px;
   }
 }
