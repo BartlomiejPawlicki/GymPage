@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../style/UsersPage.css";
+import "../style/UsersPage.scss";
 import ReactLoading from "react-loading";
 
 const UsersPage = () => {
@@ -43,7 +43,7 @@ const UsersPage = () => {
                 />
                 <div className="users__paragraph">
                   <p>
-                    Hej, jestem bardzo zadowolony z usług siłowni gold's gym !
+                    Hej, jestem bardzo zadowolony/zadowolona z usług siłowni gold's gym !
                   </p>
                 </div>
               </div>

@@ -1,0 +1,45 @@
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  &__container {
+    margin: 20px;
+    border-radius: 4px;
+    background: radial-gradient(
+      circle at 50% 50%,
+      #ffff5b 0,
+      #ffff41 25%,
+      #ebfb20 50%,
+      #c7f200 75%,
+      #a0ea00 100%
+    );
+  }
+  &__data {
+    display: flex;
+    align-items: center;
+  }
+  &__paragraph {
+    padding: 0 20px 0 20px;
+  }
+  &__header {
+    margin-top: 20px;
+    text-align: center;
+  }
+  & img {
+    border-radius: 50%;
+    margin: 20px;
+  }
+  &__person {
+    margin: 30px;
+    display: flex;
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 34vh;
+}
